@@ -17,16 +17,17 @@
             </ul>
         </nav>
     </header>
-
-
-     <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
             <p>PhD student in computer science focusing on optimization and generalization in machine learning.</p>
-            <p Contact: Email: your-email@example.com</p>
         </div>
-        <img src="28717.jpg" style="width: 1px; height: 200px; border-radius: 8px;">
-    </section>
+        <div class="about-image">
+           <img src="28717.jpg" style="width: 200px; height: 200px; border-radius: 8px;">
+        </div>
+    </div>
+</section>
 
     <section id="preprints">
         <h2>Preprints</h2>
@@ -64,6 +65,18 @@
             padding: 1.5em 0;
             text-align: center;
         }
+        #about {
+    display: flex;
+    flex-direction: row; /* Arrange text and image horizontally */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between text and image */
+    padding: 20px;
+    gap: 20px; /* Adds space between text and image */
+}
+
+.about-text {
+    flex: 1; /* Takes up remaining space for the text */
+}
         nav ul {
             list-style: none;
             padding: 0;
