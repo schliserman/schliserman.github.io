@@ -24,10 +24,11 @@
                 <p>PhD student in computer science focusing on optimization and generalization in machine learning.</p>
             </div>
             <div class="about-image">
-               <img src="28717.jpg" style="width: 200px; height: 200px; border-radius: 8px; margin-right: auto;>
+                <img src="your-image.jpg" alt="Matan Schliserman" class="profile-image">
             </div>
         </div>
     </section>
+
 
     <section id="preprints">
         <h2>Preprints</h2>
@@ -93,6 +94,29 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease-in-out;
         }
+
+        #about {
+            display: grid;
+            grid-template-columns: 1fr auto; /* Two columns, one for text and one for image */
+            gap: 20px; /* Adds space between columns */
+            align-items: center; /* Vertically center the content */
+            padding: 20px;
+        }
+            
+        .about-text {
+            /* No specific styling needed for the text section */
+        }
+            
+        .about-image {
+            text-align: center; /* Center the image inside the container */
+        }
+            
+        .profile-image {
+            width: 200px; /* Adjust width of the image */
+            height: auto;  /* Maintain aspect ratio */
+            border-radius: 50%; /* Optional: round the image */
+        }
+
 
         section:hover {
             transform: scale(1.02);
@@ -160,6 +184,7 @@
         #readme ol {
             padding-left: 20px;
         }
+        
 
         /* Mobile Responsive Design */
         @media (max-width: 768px) {
