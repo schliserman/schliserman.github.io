@@ -1,10 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matan Schliserman</title>
     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Matan Schliserman</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#preprints">Preprints</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#readme">README</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>PhD student in computer science focusing on optimization and generalization in machine learning.</p>
+        <p class="contact-info">Contact: <span>Email: your-email@example.com</span></p>
+    </section>
+
+    <section id="preprints">
+        <h2>Preprints</h2>
+        <ul>
+            <li>Preprint 1 - <a href="#">Link</a></li>
+            <li>Preprint 2 - <a href="#">Link</a></li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>Publication 1 - <a href="#">Link</a></li>
+            <li>Publication 2 - <a href="#">Link</a></li>
+        </ul>
+    </section>
+
+    <!-- New README Section -->
+    <section id="readme">
+        <h2>README</h2>
+        <h3>Matan Schliserman's Project</h3>
+        <p>This is a project about optimization and generalization in machine learning.</p>
+
+        <h4>How to Use:</h4>
+        <ol>
+            <li>Clone the repository.</li>
+            <li>Run the script.</li>
+        </ol>
+
+        <h4>License:</h4>
+        <p>MIT License</p>
+    </section>
+
+    <!-- Moved Contact Details to Footer (Less Emphasized) -->
+    <footer>
+        <p>&copy; 2025 Matan Schliserman</p>
+    </footer>
+
     <style>
+        /* General Layout */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f7f7f7;
@@ -34,6 +93,8 @@
             font-weight: bold;
             text-transform: uppercase;
         }
+
+        /* Section Styles */
         section {
             background-color: white;
             margin: 20px auto;
@@ -44,10 +105,12 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease-in-out;
         }
+
         section:hover {
             transform: scale(1.02);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
+
         h2 {
             font-size: 1.8em;
             color: #333;
@@ -55,23 +118,29 @@
             text-align: center;
             text-transform: uppercase;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         ul li {
             margin-bottom: 15px;
             font-size: 1.1em;
         }
+
         ul li a {
             color: #0073e6;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
+
         ul li a:hover {
             color: #005bb5;
         }
+
+        /* Footer Styles - Contact Info De-emphasized */
         footer {
             text-align: center;
             padding: 20px;
@@ -79,6 +148,40 @@
             color: white;
             margin-top: 40px;
         }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: #ccc; /* Lighter color for contact */
+        }
+
+        .contact-info span {
+            font-weight: normal;
+        }
+
+        /* README Section Styling */
+        #readme {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #readme h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #readme h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        #readme ol {
+            padding-left: 20px;
+        }
+
+        /* Mobile Responsive Design */
         @media (max-width: 768px) {
             section {
                 width: 95%;
@@ -86,44 +189,5 @@
             }
         }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Matan Schliserman</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#preprints">Preprints</a></li>
-                <li><a href="#publications">Publications</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>PhD student in computer science focusing on optimization and generalization in machine learning.</p>
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
-    </section>
-
-    <section id="preprints">
-        <h2>Preprints</h2>
-        <ul>
-            <li>vvp - <a href="#">Link</a></li>
-            <li>Preprint 2 - <a href="#">Link</a></li>
-        </ul>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>Publication 1 - <a href="#">Link</a></li>
-            <li>Publication 2 - <a href="#">Link</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Matan Schliserman</p>
-    </footer>
 </body>
 </html>
