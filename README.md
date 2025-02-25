@@ -1,5 +1,3 @@
-# schliserman.github.io
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +30,6 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: your-email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">yourgithub</a></p>
     </section>
     
     <footer>
