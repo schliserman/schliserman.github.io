@@ -79,11 +79,10 @@
         }
 
         .about-container {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto;
             align-items: center;
-            justify-content: flex-start;
             gap: 20px;
-            flex-wrap: nowrap;
             width: 60%;
             margin: auto;
         }
@@ -138,8 +137,8 @@
             }
 
             .about-container {
-                flex-direction: column;
-                align-items: center;
+                grid-template-columns: 1fr;
+                text-align: center;
                 width: 80%;
             }
         }
