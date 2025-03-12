@@ -25,7 +25,7 @@
 
         h1 {
             margin: 0;
-            font-size: 2.8em;
+            font-size: 3.2em;
             font-weight: 700;
         }
 
@@ -64,6 +64,7 @@
             border-radius: 15px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            text-align: left;
         }
 
         section:hover {
@@ -71,7 +72,7 @@
         }
 
         h2 {
-            font-size: 2.2em;
+            font-size: 2.4em;
             color: #2c3e50;
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -92,20 +93,29 @@
             border: 6px solid #1abc9c;
         }
 
-        /* Links */
-        ul {
-            list-style-type: none;
-            padding: 0;
+        /* Styled Lists */
+        .publication {
+            margin-bottom: 25px;
+            font-size: 1.4em;
         }
 
-        ul li a {
+        .publication p {
+            margin: 5px 0;
+        }
+
+        .publication .conference-prize {
+            font-style: italic;
+            color: #555;
+        }
+
+        .publication a {
             color: #1abc9c;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
 
-        ul li a:hover {
+        .publication a:hover {
             color: #2c3e50;
         }
 
@@ -149,18 +159,34 @@
 
     <section id="preprints">
         <h2>Preprints</h2>
-        <ul>
-            <li>Preprint 1 - <a href="#">Link</a></li>
-        </ul>
+        <div class="publication">
+            <p><strong>Preprint 1</strong></p>
+            <p>Authors: Author 1, Author 2</p>
+            <p class="conference-prize">Conference: Conference Name | Prize: Prize Name</p>
+            <p><a href="#">Link</a></p>
+        </div>
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
-        <ul>
-            <li>Publication 1 - <a href="#">Link</a></li>
-            <li>Publication 2 - <a href="#">Link</a></li>
-            <li>Publication 3 - <a href="#">Link</a></li>
-        </ul>
+        <div class="publication">
+            <p><strong>Publication 1</strong></p>
+            <p>Authors: Author 1, Author 2</p>
+            <p class="conference-prize">Conference: Conference Name | Prize: Prize Name</p>
+            <p><a href="#">Link</a></p>
+        </div>
+        <div class="publication">
+            <p><strong>Publication 2</strong></p>
+            <p>Authors: Author 1, Author 2</p>
+            <p class="conference-prize">Conference: Conference Name | Prize: Prize Name</p>
+            <p><a href="#">Link</a></p>
+        </div>
+        <div class="publication">
+            <p><strong>Publication 3</strong></p>
+            <p>Authors: Author 1, Author 2</p>
+            <p class="conference-prize">Conference: Conference Name | Prize: Prize Name</p>
+            <p><a href="#">Link</a></p>
+        </div>
     </section>
 
     <footer>
